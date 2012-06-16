@@ -1,4 +1,4 @@
-A short script for replacing city names with vanity citiy names in a variety of binary data files with txt extensions. The data files have a fixed width of 346 bytes. 3MA_TEST.txt is a sample data file with a few records.
+A short script for replacing city names with vanity citiy names in multiple binary data files with txt extensions. The data files have a fixed width of 346 bytes. 3MA_TEST.txt is a sample data file with a few records.
 
 The format for the vanity_names csv I used is:
 "<Vanity City Name>", census_tract, file_id, state
