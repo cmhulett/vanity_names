@@ -55,12 +55,14 @@ for file in found_files:
         match = "0"
         s_line = str( line )
         for vanity_name_record in vanity_names:
+            #census_tracts are on 14:20 in 346 record format
             if s_line[14:20] == vanity_name_record[1]:
                 match = vanity_name_record[0]
                 break
         if match == "0":
             dest.write( s_line )
         else:
+            #city starts at 141 and goes for 24 in 346 format
             dest.write( s_line[:140] + match.ljust(24) + s_line[164:] )
     src.close()
     dest.close()
